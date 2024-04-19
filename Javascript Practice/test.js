@@ -19,6 +19,7 @@ namesofPeople.forEach(function (namesofPeople) {
 })
 
 
+
 function sayHello(name) {
     console.log("Hello " + name + ".");
 }
@@ -26,10 +27,14 @@ function sayHello(name) {
 sayHello("Damian");
 
 
-const monsters = {
+let monsters = {
     name: "hairy monster",
     powers: "Very hairy",
     alive: true
 };
 
+console.log(monsters);
+console.log(monsters.alive);
+
+monsters.powers = "being really smell";
 console.log(monsters);
