@@ -206,6 +206,33 @@ if (hitChance >= .50) {
     console.log(`No Critical Hit! but ${monster1} gets hit for ${monster2Attack} and has ${monster1Life} hitpoints left.`);
 }
 
+// Working on an simple inventory system for a text adventure game in Javascript
+
+// userInventory Empty for now.
+
+let userInventory = {
+
+}
+
+let floorOnFirstScene = {
+    item1: {
+        name: "sword",
+        attackDamage: 15,
+    }
+}
+
+console.log("You see a sword on the floor");
+
+let userDecision = prompt("Do you pick up the sword?");
+
+if (userDecision === 'Yes') {
+    userInventory = floorOnFirstScene.item1;
+    console.log("You now have the sword!")
+    console.log(userInventory);
+} else {
+    console.log("Either you said no or type something else. Either way, good luck you have no sword.")
+}
+
 
 
 
