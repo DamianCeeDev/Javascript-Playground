@@ -233,7 +233,22 @@ if (userDecision === 'Yes') {
     console.log("Either you said no or type something else. Either way, good luck you have no sword.")
 }
 
+// Trying another way of making objects with userInputs.
 
+function newPlayer(playerRace, playerClass, playerGender) {
+    this.playerRace = playerRace;
+    this.playerClass = playerClass;
+    this.playerGender = playerGender;
+}
 
+let playerRace = prompt("What is your character's race?");
+
+let playerClass = prompt("What is your character's class?");
+
+let playerGender = prompt("What is your character's gender?");
+
+let newCharacter1 = new newPlayer(playerRace, playerClass, playerGender);
+
+console.log(newCharacter1);
 
 
