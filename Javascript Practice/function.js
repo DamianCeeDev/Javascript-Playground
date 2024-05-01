@@ -61,8 +61,13 @@ switch (playerPickUp) {
         console.log(`Invalid Entry.`);
 }
 
+// Testing the arrow function
 
+const playerName = 'Gary';
 
+const playerOne = playerName => {
+    console.log(`Hello ${playerName}`);
+    return playerName;
+}
 
-
-
+playerOne('Gary');
