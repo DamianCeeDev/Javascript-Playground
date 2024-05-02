@@ -71,3 +71,29 @@ const playerOne = playerName => {
 }
 
 playerOne('Gary');
+
+
+/* Write your code below. Good luck! 🙂 */
+
+const calcAverage = (score1, score2, score3) => {
+    const averageScore = (score1 + score2 + score3) / 3;
+    return averageScore;
+};
+
+const scoreDolphins = calcAverage(85, 54, 41);
+const scoreKoalas = calcAverage(23, 34, 27);
+
+const avgDolphins = scoreDolphins;
+const avgKoalas = scoreKoalas;
+
+function checkWinner(avgDolphins, avgKoalas) {
+    if (avgDolphins > avgKoalas) {
+        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas}).`);
+    } else if (avgKoalas > avgDolphins) {
+        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins}).`);
+    } else {
+        console.log("No team wins...");
+    }
+}
+
+checkWinner(avgDolphins, avgKoalas);
