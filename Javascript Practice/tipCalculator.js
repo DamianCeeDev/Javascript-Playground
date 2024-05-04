@@ -14,6 +14,17 @@ console.log(`The bill was ${bill}, the tip was ${tip} and the total value was ${
 
 /* Write your code below. Good luck! 🙂 */
 
+/* function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        let tip = bill * .15;
+        return tip;
+    } else {
+        let tip = bill * .20;
+        return tip;
+    }
+
+} */
+
 function calcTip(bill) {
     if (bill >= 50 && bill <= 300) {
         let tip = bill * .15;
