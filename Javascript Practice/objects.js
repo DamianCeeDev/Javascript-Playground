@@ -38,3 +38,21 @@ swords_list = {
 }
 
 console.log(swords_list);
+
+characterPlayer = {
+    name: "BooBooBam",
+    age: 123,
+    class: "warrior",
+    race: "Ogre",
+}
+
+console.log(characterPlayer);
+
+characterPlayer.location = "Atlantis";
+
+console.log(characterPlayer);
+
+characterPlayer.favoriteSaying = prompt("What is your character's favorite saying??");
+
+console.log(characterPlayer);
+
