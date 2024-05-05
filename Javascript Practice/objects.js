@@ -21,3 +21,20 @@ for (let i = sword.durability; i >= 0; i--) {
     }
 
 }
+
+swords_list = {
+    katana:
+    {
+        length: 25,
+        damage: 300,
+        durability: 150
+    },
+    bastard_sword:
+    {
+        length: 20,
+        damage: 500,
+        durability: 300
+    }
+}
+
+console.log(swords_list);
