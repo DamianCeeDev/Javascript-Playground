@@ -1,18 +1,13 @@
 {
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.11"
+  },
   "dependencies": {
     "three": "^0.164.1"
-  },
-  "name": "threedotjsproject",
-  "version": "1.0.0",
-  "main": "script.js",
-  "devDependencies": {
-    "parcel": "^2.12.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
