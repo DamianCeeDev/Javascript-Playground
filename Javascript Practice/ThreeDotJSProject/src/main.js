@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // Renderer
 
@@ -63,7 +64,10 @@ const groundFloor = new THREE.Mesh(
     new THREE.PlaneGeometry(10, 10),
 
     // Material
-    new THREE.MeshLambertMaterial({ color: `#F5EDED` })
+    new THREE.MeshLambertMaterial({
+        color: `#F5EDED`,
+        side: THREE.DoubleSide
+    })
 );
 
 groundFloor.rotation.x = THREE.MathUtils.degToRad(-90);
@@ -73,7 +77,19 @@ scene.add(groundFloor);
 
 camera.lookAt(boxMesh.position);
 
+// Controls
+
+const controls = new OrbitControls(camera, renderer.domElement);
+
 
 // Draw
 
-renderer.render(scene, camera);
+let boxMeshY = 1;
+function draw() {
+    renderer.render(scene, camera);
+    controls.update();
+
+    renderer.setAnimationLoop(draw);
+}
+
+draw();
