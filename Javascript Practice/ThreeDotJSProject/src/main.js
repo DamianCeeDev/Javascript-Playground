@@ -27,7 +27,7 @@ const camera = new THREE.PerspectiveCamera(
     1000 // far    
 );
 
-camera.position.set(5, 5, 5);
+camera.position.set(5, 10, 5);
 
 scene.add(camera);
 
@@ -37,7 +37,7 @@ const ambientLight = new THREE.AmbientLight('white', 1);
 scene.add(ambientLight);
 
 const directionalLight = new THREE.DirectionalLight(`white`, 3);
-directionalLight.position.set(-3, 5, 1);
+directionalLight.position.set(-10, 10, 1);
 directionalLight.castShadow = true;
 
 scene.add(directionalLight);
@@ -51,7 +51,7 @@ const boxMesh = new THREE.Mesh(
 
     // Material
 
-    new THREE.MeshLambertMaterial({ color: 'red' }),
+    new THREE.MeshLambertMaterial({ color: 'blue' }),
 );
 
 boxMesh.position.y = 1;
